@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar"
+            app:title="@string/app_name" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+         <ImageView
+            android:id="@+id/img_mariposa"
+             android:layout_margin="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue_butterfly_1401823"
+            app:layout_constraintBottom_toTopOf="@+id/bt_jugar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/mariposa_azul" />
+
+            <Button
+                android:id="@+id/bt_jugar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:drawableLeft="@drawable/play"
+                android:layout_margin="5sp"
+                android:text="@string/jugar"
+                app:layout_constraintBottom_toTopOf="@+id/bt_configuracion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_mariposa" />
+        <Button
+            android:id="@+id/bt_configuracion"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5sp"
+            android:drawableLeft="@drawable/cog"
+            android:text="@string/configuracion"
+            app:layout_constraintTop_toBottomOf="@+id/bt_jugar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bt_salir"
+            android:onClick="loren"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/bt_salir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5sp"
+            android:text="@string/salir"
+            app:layout_constraintTop_toBottomOf="@+id/bt_configuracion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bt_informacion"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="salir"/>
+
+        <Button
+            android:id="@+id/bt_informacion"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:text="@string/informacion"
+            app:cornerRadius="0sp"
+            android:onClick="loren"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_salir" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

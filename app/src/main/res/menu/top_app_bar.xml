@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ab_configuracion"
+        android:title="@string/configuracion"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ab_informacion"
+        android:title="@string/informacion"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/ab_salir"
+        android:title="@string/salir"
+        app:showAsAction="never"/>
+</menu>

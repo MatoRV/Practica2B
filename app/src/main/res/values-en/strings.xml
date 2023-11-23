@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practice2B</string>
+    <string name="jugar">!Play¡</string>
+    <string name="configuracion">Configuration</string>
+    <string name="salir">Exit</string>
+    <string name="informacion">Information</string>
+    <string name="mariposa_azul">Blue Butterfly</string>
+    <string name="loren_ipsum">Loren ipsum</string>
+</resources>
