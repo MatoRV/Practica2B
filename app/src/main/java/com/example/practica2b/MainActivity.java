@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public void jugar(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+        startActivity(intent);
+    }
+
     public void loren(View view) {
         Intent intent = new Intent(this, lorenActivity.class);
         startActivity(intent);

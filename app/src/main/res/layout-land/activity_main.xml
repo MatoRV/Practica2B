@@ -41,7 +41,7 @@
             android:id="@+id/img_mariposa"
              android:layout_margin="5sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:src="@drawable/blue_butterfly_1401823"
             app:layout_constraintBottom_toTopOf="@+id/bt_jugar"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
             <Button
                 android:id="@+id/bt_jugar"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/play"
                 android:layout_margin="5sp"
                 android:onClick="jugar"
@@ -64,7 +64,7 @@
         <Button
             android:id="@+id/bt_configuracion"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:drawableLeft="@drawable/cog"
             android:text="@string/configuracion"
@@ -77,7 +77,7 @@
         <Button
             android:id="@+id/bt_salir"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5sp"
             android:text="@string/salir"
             app:layout_constraintTop_toBottomOf="@+id/bt_configuracion"
@@ -89,7 +89,7 @@
         <Button
             android:id="@+id/bt_informacion"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="5sp"
             android:drawableLeft="@drawable/information_outline"
             android:layout_marginEnd="5sp"

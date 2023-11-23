@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">Practica2B</string>
-    <string name="jugar">!Jugar¡</string>
+    <string name="jugar">¡Jugar!</string>
     <string name="configuracion">Configuracion</string>
     <string name="salir">Salir</string>
     <string name="informacion">Informacion</string>
     <string name="mariposa_azul">Mariposa azul</string>
     <string name="loren_ipsum">Loren ipsum</string>
+    <string name="empate">¡Empate!</string>
+    <string name="victoria">¡Has ganado!</string>
+    <string name="derrota">¡Has perdido!</string>
 </resources>
