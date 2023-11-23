@@ -29,8 +29,12 @@
         <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
         <item name="fontFamily">@font/aldrich</item>
         <item name="toolbarStyle">@style/ToolBarStyle</item>
+        <item name="actionOverflowButtonStyle">@style/ToolbarButtonStyle</item>
     </style>
 
+    <style name="ToolbarButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="tint">@color/md_theme_light_onPrimary</item>
+    </style>
 
     <style name="ToolBarStyle" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">@color/md_theme_light_primary</item>

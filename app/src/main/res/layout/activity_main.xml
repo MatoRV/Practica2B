@@ -42,7 +42,7 @@
              android:layout_margin="5sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/blue_butterfly_1401823"
+            android:src="@drawable/blue_butterfly_1401823_removebg_preview"
             app:layout_constraintBottom_toTopOf="@+id/bt_jugar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,26 +53,27 @@
                 android:id="@+id/bt_jugar"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:drawableLeft="@drawable/play"
                 android:layout_margin="5sp"
                 android:onClick="jugar"
                 android:text="@string/jugar"
+                app:icon="@drawable/play"
                 app:layout_constraintBottom_toTopOf="@+id/bt_configuracion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_mariposa" />
-        <Button
-            android:id="@+id/bt_configuracion"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="5sp"
-            android:drawableLeft="@drawable/cog"
-            android:text="@string/configuracion"
-            app:layout_constraintTop_toBottomOf="@+id/bt_jugar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/bt_salir"
-            android:onClick="loren"
-            app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/bt_configuracion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5sp"
+                android:onClick="loren"
+                android:text="@string/configuracion"
+                app:icon="@drawable/cog"
+                app:layout_constraintBottom_toTopOf="@+id/bt_salir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_jugar" />
 
         <Button
             android:id="@+id/bt_salir"
@@ -86,20 +87,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:onClick="salir"/>
 
-        <Button
-            android:id="@+id/bt_informacion"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="5sp"
-            android:drawableLeft="@drawable/information_outline"
-            android:layout_marginEnd="5sp"
-            android:text="@string/informacion"
-            app:cornerRadius="0sp"
-            android:onClick="loren"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_salir" />
+            <Button
+                android:id="@+id/bt_informacion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:onClick="loren"
+                android:text="@string/informacion"
+                app:cornerRadius="0sp"
+                app:icon="@drawable/information_outline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_salir" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
